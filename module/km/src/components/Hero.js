@@ -49,11 +49,11 @@ const Hero = () => {
 
 Hero.state = {
     text : "UBAH ..",
-    setText : (args)=>{
-        Hero.state.text = args
+    setText : (event)=>{
+        Hero.state.text = event
         App()
     },
-
+    
     imgNo : 140,
     imgPrev : ()=>{
         Hero.state.imgNo -= 1
@@ -89,6 +89,8 @@ window.showModal = ()=>{
 window.ubahText = (event)=>{
     Hero.state.setText(event.target.value)
 }
+
+
 
 //export Hero agar bisa digunakan di file lain
 export default Hero;

@@ -102,3 +102,30 @@ body{
     transition-duration: .5s;
 
 }
+
+.footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.menuContainer{
+    width: 100vw;
+    overflow-x: scroll;
+    scrollbar-base-color: none;
+    scrollbar-arrow-color: white;
+}
+
+.menu{
+    list-style-type: none;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200vw;
+    padding: 0 40px;
+}
