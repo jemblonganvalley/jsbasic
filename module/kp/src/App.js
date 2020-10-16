@@ -4,6 +4,8 @@ import Headline from './components/Headline.js'
 import CardContainer from './components/CardContainer.js'
 import Footer from './components/Footer.js'
 import Menu from './components/Menu.js'
+import DetailPage from './components/DetailPage.js'
+
 
 const App = ()=>{
     return `
@@ -15,7 +17,9 @@ const App = ()=>{
         <center>
             ${CardContainer()}
         </center>
+        ${DetailPage()}
         ${Footer()}
+
     `
 }
 

@@ -1,19 +1,17 @@
 import updater from '../updater.js'
 
 
-const Headline = ()=>{
+const Headline = (title='Judul Berita', img=150)=>{
     return `
         <section class='headline'>
-            <h1>${Headline.state.title}</h1>
-            <img src="${Headline.state.img}" />
+            <h1>${title}</h1>
+            <img src="https://picsum.photos/seed/${img}/900" />
             ${Headline.state.content}
         </section>
         `
 }
 
 Headline.state = {
-    title : 'Berita Terkini',
-    img : 'https://picsum.photos/seed/150/600',
     content : `
         <p>
             Selamat datang di Jvalley News, 
